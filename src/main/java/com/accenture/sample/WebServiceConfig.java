@@ -62,7 +62,7 @@ public class WebServiceConfig extends WsConfigurerAdapter {
 	public SimplePasswordValidationCallbackHandler callbackHandler() {
 		SimplePasswordValidationCallbackHandler callbackHandler = new SimplePasswordValidationCallbackHandler();
 		// TODO @rap: Use real username and passwords
-		callbackHandler.setUsersMap(Collections.singletonMap("user", "password"));
+		callbackHandler.setUsersMap(Collections.singletonMap("ochannel", "Minories@Feb2017"));
 		return callbackHandler;
 	}
 
