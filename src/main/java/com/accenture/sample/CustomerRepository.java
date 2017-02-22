@@ -3,6 +3,7 @@ package com.accenture.sample;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.List;
@@ -22,6 +23,11 @@ public class CustomerRepository {
 
 	@PostConstruct
 	public void initData() throws ParseException, DatatypeConfigurationException {
+		
+		GregorianCalendar paymentDate = new GregorianCalendar();		
+		paymentDate.setTime(new Date());
+		paymentDate.add(Calendar.DATE, 14); //minus number would decrement the days
+		
 		GregorianCalendar cal = new GregorianCalendar();
 		Date dob1 = new SimpleDateFormat("dd/MM/yyyy").parse("01/07/1950");
 		Date dob2 = new SimpleDateFormat("dd/MM/yyyy").parse("15/10/1948");
@@ -33,14 +39,18 @@ public class CustomerRepository {
 		cust1.setFirstName("Samba");
 		cust1.setLastName("Mitra");
 		cal.setTime(dob1);
-		cust1.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));
+		cust1.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));		
+		cust1.setPaymentDate(dataTypeFactory.newXMLGregorianCalendar(paymentDate));		
+		cust1.setAmount("£327.50");
 
 		Customer cust2 = new Customer();
 		cust2.setNino("AB123456B");
 		cust2.setFirstName("Faran");
 		cust2.setLastName("Kardame");
 		cal.setTime(dob2);
-		cust2.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));
+		cust2.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));		
+		cust2.setPaymentDate(dataTypeFactory.newXMLGregorianCalendar(paymentDate));
+		cust2.setAmount("£647.50");
 
 		Customer cust3 = new Customer();
 		cust3.setNino("BB223344C");
@@ -48,6 +58,8 @@ public class CustomerRepository {
 		cust3.setLastName("Varma");
 		cal.setTime(dob3);
 		cust3.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));
+		cust3.setPaymentDate(dataTypeFactory.newXMLGregorianCalendar(paymentDate));
+		cust3.setAmount("£737.80");
 
 		customers.add(cust1);
 		customers.add(cust2);

@@ -23,6 +23,8 @@
             <xs:element name="firstName" type="xs:string"/>
             <xs:element name="lastName" type="xs:string"/>
             <xs:element name="dob" type="xs:date"/>
+            <xs:element name="amount" type="xs:string"/>
+            <xs:element name="paymentDate" type="xs:date"/>
         </xs:sequence>
     </xs:complexType>
 </xs:schema>
