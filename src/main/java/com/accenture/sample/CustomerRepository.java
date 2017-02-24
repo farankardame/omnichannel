@@ -30,7 +30,7 @@ public class CustomerRepository {
 		
 		GregorianCalendar cal = new GregorianCalendar();
 		Date dob1 = new SimpleDateFormat("dd/MM/yyyy").parse("01/07/1950");
-		Date dob2 = new SimpleDateFormat("dd/MM/yyyy").parse("15/10/1948");
+		Date dob2 = new SimpleDateFormat("dd/MM/yyyy").parse("15/10/1987");
 		Date dob3 = new SimpleDateFormat("dd/MM/yyyy").parse("20/01/1952");
 		DatatypeFactory dataTypeFactory = DatatypeFactory.newInstance();
 
