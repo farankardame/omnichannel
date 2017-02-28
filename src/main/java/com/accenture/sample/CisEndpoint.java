@@ -6,8 +6,8 @@ import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
-import io.spring.guides.gs_producing_web_service.GetCisRequest;
-import io.spring.guides.gs_producing_web_service.GetCisResponse;
+import io.spring.guides.cis_producing_web_service.GetCisRequest;
+import io.spring.guides.cis_producing_web_service.GetCisResponse;
 
 @Endpoint
 public class CisEndpoint {

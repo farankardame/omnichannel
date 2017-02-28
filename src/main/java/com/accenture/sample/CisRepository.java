@@ -15,7 +15,7 @@ import javax.xml.datatype.DatatypeFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 
-import io.spring.guides.gs_producing_web_service.Cisdetails;
+import io.spring.guides.cis_producing_web_service.Cisdetails;
 
 @Component
 public class CisRepository {
