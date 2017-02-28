@@ -45,7 +45,7 @@ public class WebServiceConfig extends WsConfigurerAdapter {
 	public DefaultWsdl11Definition defaultWsdl11DefinitionForCis(XsdSchema cisSchema) {
 		DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
 		wsdl11Definition.setPortTypeName("CisPort");
-		wsdl11Definition.setLocationUri("/ws");
+		wsdl11Definition.setLocationUri("/webservice");
 		wsdl11Definition.setTargetNamespace("http://spring.io/guides/gs-producing-web-service");
 		wsdl11Definition.setSchema(cisSchema);
 		return wsdl11Definition;
