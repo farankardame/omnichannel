@@ -1,0 +1,34 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://spring.io/guides/gs-producing-web-service"
+           targetNamespace="http://spring.io/guides/gs-producing-web-service" elementFormDefault="qualified">
+
+    <xs:element name="getCisRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nino" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getCisResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cisdetails" type="tns:cisdetails"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="cisdetails">
+        <xs:sequence>
+        	<xs:element name="nino" type="xs:string"/>
+            <xs:element name="firstName" type="xs:string"/>
+            <xs:element name="lastName" type="xs:string"/>
+            <xs:element name="dob" type="xs:date"/>
+            <xs:element name="addressline1" type="xs:string"/>
+            <xs:element name="addressline2" type="xs:string"/>
+            <xs:element name="addressline3" type="xs:string"/>
+            <xs:element name="city" type="xs:string"/>
+            <xs:element name="postcode" type="xs:string"/>
+            <xs:element name="country" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

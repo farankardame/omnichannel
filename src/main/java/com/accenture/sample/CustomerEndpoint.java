@@ -14,11 +14,12 @@ public class CustomerEndpoint {
 	private static final String NAMESPACE_URI = "http://spring.io/guides/gs-producing-web-service";
 
 	private CustomerRepository customerRepository;
-
+	
 	@Autowired
 	public CustomerEndpoint(CustomerRepository customerRepository) {
 		this.customerRepository = customerRepository;
 	}
+	
 
 	@PayloadRoot(namespace = NAMESPACE_URI, localPart = "getCustomerRequest")
 	@ResponsePayload
@@ -27,4 +28,5 @@ public class CustomerEndpoint {
 		response.setCustomer(customerRepository.findCustomer(request.getNino()));
 		return response;
 	}
+	
 }
