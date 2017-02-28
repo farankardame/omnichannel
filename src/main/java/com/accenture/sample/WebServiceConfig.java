@@ -40,10 +40,25 @@ public class WebServiceConfig extends WsConfigurerAdapter {
 		wsdl11Definition.setSchema(countriesSchema);
 		return wsdl11Definition;
 	}
+	
+	@Bean(name = "cis")
+	public DefaultWsdl11Definition defaultWsdl11DefinitionForCis(XsdSchema cisSchema) {
+		DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
+		wsdl11Definition.setPortTypeName("CustomerPort");
+		wsdl11Definition.setLocationUri("/ws");
+		wsdl11Definition.setTargetNamespace("http://spring.io/guides/gs-producing-web-service");
+		wsdl11Definition.setSchema(cisSchema);
+		return wsdl11Definition;
+	}
 
 	@Bean
-	public XsdSchema countriesSchema() {
+	public XsdSchema cisSchema() {
 		return new SimpleXsdSchema(new ClassPathResource("customer.xsd"));
+	}
+	
+	@Bean
+	public XsdSchema countriesSchema() {
+		return new SimpleXsdSchema(new ClassPathResource("cis.xsd"));
 	}
 
 	@Bean
