@@ -69,7 +69,7 @@ public class WebServiceConfig extends WsConfigurerAdapter {
 	@Bean
 	public PayloadValidatingInterceptor payloadValidatingInterceptor() {
 		final PayloadValidatingInterceptor payloadValidatingInterceptor = new PayloadValidatingInterceptor();
-		payloadValidatingInterceptor.setSchema(new ClassPathResource("customer.xsd"));
+		payloadValidatingInterceptor.setSchemas(new ClassPathResource("customer.xsd"), new ClassPathResource("cis.xsd"));
 		return payloadValidatingInterceptor;
 	}
 
