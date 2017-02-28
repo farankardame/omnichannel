@@ -11,7 +11,7 @@ import io.spring.guides.gs_producing_web_service.GetCisResponse;
 
 @Endpoint
 public class CisEndpoint {
-	private static final String NAMESPACE_URI = "http://spring.io/guides/gs-producing-web-service";
+	private static final String NAMESPACE_URI = "http://spring.io/guides/cis-producing-web-service";
 
 	private CisRepository cisRepository;
 	
