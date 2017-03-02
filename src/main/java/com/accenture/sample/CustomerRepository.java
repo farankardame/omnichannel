@@ -35,7 +35,7 @@ public class CustomerRepository {
 		DatatypeFactory dataTypeFactory = DatatypeFactory.newInstance();
 
 		Customer cust1 = new Customer();
-		cust1.setNino("AA111111A");
+		cust1.setNino("AB111111A");
 		cust1.setFirstName("Joe");
 		cust1.setLastName("Bloggs");
 		cal.setTime(dob1);
