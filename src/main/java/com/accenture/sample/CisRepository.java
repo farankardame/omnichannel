@@ -36,8 +36,8 @@ public class CisRepository {
 
 		Cisdetails cust1 = new Cisdetails();
 		cust1.setNino("AA111111A");
-		cust1.setFirstName("Samba");
-		cust1.setLastName("Mitra");
+		cust1.setFirstName("Joe");
+		cust1.setLastName("Bloggs");
 		cal.setTime(dob1);
 		cust1.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));		
 		cust1.setAddressline1("150 Minories");
@@ -50,8 +50,8 @@ public class CisRepository {
 
 		Cisdetails cust2 = new Cisdetails();
 		cust2.setNino("AB123456B");
-		cust2.setFirstName("Faran");
-		cust2.setLastName("Kardame");
+		cust2.setFirstName("John");
+		cust2.setLastName("Smith");
 		cal.setTime(dob2);
 		cust2.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));		
 		cust2.setAddressline1("150 Minories");
@@ -63,8 +63,8 @@ public class CisRepository {
 
 		Cisdetails cust3 = new Cisdetails();
 		cust3.setNino("BB223344C");
-		cust3.setFirstName("Meera");
-		cust3.setLastName("Varma");
+		cust3.setFirstName("Chris");
+		cust3.setLastName("Chase");
 		cal.setTime(dob3);
 		cust3.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));
 		cust3.setAddressline1("150 Minories");

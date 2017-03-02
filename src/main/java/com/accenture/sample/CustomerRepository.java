@@ -29,15 +29,15 @@ public class CustomerRepository {
 		paymentDate.add(Calendar.DATE, 14); //minus number would decrement the days
 		
 		GregorianCalendar cal = new GregorianCalendar();
-		Date dob1 = new SimpleDateFormat("dd/MM/yyyy").parse("01/07/1950");
+		Date dob1 = new SimpleDateFormat("dd/MM/yyyy").parse("17/09/1987");
 		Date dob2 = new SimpleDateFormat("dd/MM/yyyy").parse("15/10/1987");
-		Date dob3 = new SimpleDateFormat("dd/MM/yyyy").parse("20/01/1952");
+		Date dob3 = new SimpleDateFormat("dd/MM/yyyy").parse("17/09/1987");
 		DatatypeFactory dataTypeFactory = DatatypeFactory.newInstance();
 
 		Customer cust1 = new Customer();
 		cust1.setNino("AA111111A");
-		cust1.setFirstName("Samba");
-		cust1.setLastName("Mitra");
+		cust1.setFirstName("Joe");
+		cust1.setLastName("Bloggs");
 		cal.setTime(dob1);
 		cust1.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));		
 		cust1.setPaymentDate(dataTypeFactory.newXMLGregorianCalendar(paymentDate));		
@@ -45,8 +45,8 @@ public class CustomerRepository {
 
 		Customer cust2 = new Customer();
 		cust2.setNino("AB123456B");
-		cust2.setFirstName("Faran");
-		cust2.setLastName("Kardame");
+		cust2.setFirstName("John");
+		cust2.setLastName("Smith");
 		cal.setTime(dob2);
 		cust2.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));		
 		cust2.setPaymentDate(dataTypeFactory.newXMLGregorianCalendar(paymentDate));
@@ -54,8 +54,8 @@ public class CustomerRepository {
 
 		Customer cust3 = new Customer();
 		cust3.setNino("BB223344C");
-		cust3.setFirstName("Meera");
-		cust3.setLastName("Varma");
+		cust3.setFirstName("Chris");
+		cust3.setLastName("Chase");
 		cal.setTime(dob3);
 		cust3.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));
 		cust3.setPaymentDate(dataTypeFactory.newXMLGregorianCalendar(paymentDate));
