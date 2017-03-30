@@ -33,6 +33,7 @@ public class CisRepository {
 		Date dob2 = new SimpleDateFormat("dd/MM/yyyy").parse("15/10/1987");
 		Date dob3 = new SimpleDateFormat("dd/MM/yyyy").parse("20/01/1952");
 		Date dob4 = new SimpleDateFormat("dd/MM/yyyy").parse("17/09/1987");
+		Date dob5 = new SimpleDateFormat("dd/MM/yyyy").parse("19/01/1967");
 		DatatypeFactory dataTypeFactory = DatatypeFactory.newInstance();
 
 		Cisdetails cust1 = new Cisdetails();
@@ -90,11 +91,26 @@ public class CisRepository {
 		cust4.setPostcode("EC3M 3BD");
 		cust4.setCountry("UK");
 		cust4.setMobile("07549886343");
+		
+		Cisdetails cust5 = new Cisdetails();
+		cust5.setNino("AA000301A");
+		cust5.setFirstName("Mark");
+		cust5.setLastName("Lyons");
+		cal.setTime(dob5);
+		cust5.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));
+		cust5.setAddressline1("150 Minories");
+		cust5.setAddressline2("Aldgate");
+		cust5.setAddressline3("");
+		cust5.setCity("London");
+		cust5.setPostcode("EC3M 3BD");
+		cust5.setCountry("UK");
+		cust5.setMobile("07778281738");
 
 		customers.add(cust1);
 		customers.add(cust2);
 		customers.add(cust3);
 		customers.add(cust4);
+		customers.add(cust5);
 	}
 
 	public Cisdetails findCisDetails(String nino) {
