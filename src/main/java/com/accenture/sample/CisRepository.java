@@ -94,6 +94,7 @@ public class CisRepository {
 		customers.add(cust1);
 		customers.add(cust2);
 		customers.add(cust3);
+		customers.add(cust4);
 	}
 
 	public Cisdetails findCisDetails(String nino) {
