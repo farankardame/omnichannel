@@ -93,7 +93,7 @@ public class CisRepository {
 		cust4.setMobile("07549886343");
 		
 		Cisdetails cust5 = new Cisdetails();
-		cust5.setNino("AA000301A");
+		cust5.setNino("AA000302A");
 		cust5.setFirstName("Mark");
 		cust5.setLastName("Lyons");
 		cal.setTime(dob5);
