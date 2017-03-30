@@ -32,12 +32,13 @@ public class CisRepository {
 		Date dob1 = new SimpleDateFormat("dd/MM/yyyy").parse("01/07/1950");
 		Date dob2 = new SimpleDateFormat("dd/MM/yyyy").parse("15/10/1987");
 		Date dob3 = new SimpleDateFormat("dd/MM/yyyy").parse("20/01/1952");
+		Date dob4 = new SimpleDateFormat("dd/MM/yyyy").parse("17/09/1987");
 		DatatypeFactory dataTypeFactory = DatatypeFactory.newInstance();
 
 		Cisdetails cust1 = new Cisdetails();
-		cust1.setNino("AA111111A");
-		cust1.setFirstName("Joe");
-		cust1.setLastName("Bloggs");
+		cust1.setNino("AB345678C");
+		cust1.setFirstName("Mark");
+		cust1.setLastName("Jennings");
 		cal.setTime(dob1);
 		cust1.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));		
 		cust1.setAddressline1("150 Minories");
@@ -46,12 +47,12 @@ public class CisRepository {
 		cust1.setCity("London");
 		cust1.setPostcode("EC3M 3BD");
 		cust1.setCountry("UK");
-		
+		cust1.setMobile("07803247003");
 
 		Cisdetails cust2 = new Cisdetails();
 		cust2.setNino("AB123456B");
-		cust2.setFirstName("John");
-		cust2.setLastName("Smith");
+		cust2.setFirstName("Harry");
+		cust2.setLastName("Waller");
 		cal.setTime(dob2);
 		cust2.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));		
 		cust2.setAddressline1("150 Minories");
@@ -60,11 +61,12 @@ public class CisRepository {
 		cust2.setCity("London");
 		cust2.setPostcode("EC3M 3BD");
 		cust2.setCountry("UK");
+		cust2.setMobile("07554008471");
 
 		Cisdetails cust3 = new Cisdetails();
-		cust3.setNino("BB223344C");
-		cust3.setFirstName("Chris");
-		cust3.setLastName("Chase");
+		cust3.setNino("AB223344C");
+		cust3.setFirstName("Mike");
+		cust3.setLastName("Dodds");
 		cal.setTime(dob3);
 		cust3.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));
 		cust3.setAddressline1("150 Minories");
@@ -73,6 +75,21 @@ public class CisRepository {
 		cust3.setCity("London");
 		cust3.setPostcode("EC3M 3BD");
 		cust3.setCountry("UK");
+		cust3.setMobile("07595398254");
+		
+		Cisdetails cust4 = new Cisdetails();
+		cust4.setNino("AA000301A");
+		cust4.setFirstName("Chris");
+		cust4.setLastName("Chase");
+		cal.setTime(dob4);
+		cust4.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));
+		cust4.setAddressline1("150 Minories");
+		cust4.setAddressline2("Aldgate");
+		cust4.setAddressline3("");
+		cust4.setCity("London");
+		cust4.setPostcode("EC3M 3BD");
+		cust4.setCountry("UK");
+		cust4.setMobile("07549886343");
 
 		customers.add(cust1);
 		customers.add(cust2);

@@ -29,6 +29,7 @@
             <xs:element name="city" type="xs:string"/>
             <xs:element name="postcode" type="xs:string"/>
             <xs:element name="country" type="xs:string"/>
+            <xs:element name="mobile" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
 </xs:schema>
