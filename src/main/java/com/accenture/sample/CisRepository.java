@@ -29,9 +29,9 @@ public class CisRepository {
 		paymentDate.add(Calendar.DATE, 14); //minus number would decrement the days
 		
 		GregorianCalendar cal = new GregorianCalendar();
-		Date dob1 = new SimpleDateFormat("dd/MM/yyyy").parse("01/07/1950");
+		Date dob1 = new SimpleDateFormat("dd/MM/yyyy").parse("10/12/1976");
 		Date dob2 = new SimpleDateFormat("dd/MM/yyyy").parse("15/10/1987");
-		Date dob3 = new SimpleDateFormat("dd/MM/yyyy").parse("20/01/1952");
+		Date dob3 = new SimpleDateFormat("dd/MM/yyyy").parse("11/02/1986");
 		Date dob4 = new SimpleDateFormat("dd/MM/yyyy").parse("17/09/1987");
 		Date dob5 = new SimpleDateFormat("dd/MM/yyyy").parse("19/01/1967");
 		DatatypeFactory dataTypeFactory = DatatypeFactory.newInstance();
