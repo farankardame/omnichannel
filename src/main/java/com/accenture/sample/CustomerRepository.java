@@ -36,6 +36,7 @@ public class CustomerRepository {
 		Date dob5 = new SimpleDateFormat("dd/MM/yyyy").parse("19/01/1967");
 		Date dob6 = new SimpleDateFormat("dd/MM/yyyy").parse("20/01/1985");
 		Date dob7 = new SimpleDateFormat("dd/MM/yyyy").parse("20/04/1984");
+		Date dob8 = new SimpleDateFormat("dd/MM/yyyy").parse("24/05/1983");
 		
 		DatatypeFactory dataTypeFactory = DatatypeFactory.newInstance();
 
@@ -101,6 +102,15 @@ public class CustomerRepository {
 		cust7.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));
 		cust7.setPaymentDate(dataTypeFactory.newXMLGregorianCalendar(paymentDate));
 		cust7.setAmount("£737.80");
+		
+		Customer cust8 = new Customer();
+		cust8.setNino("AA000777A");
+		cust8.setFirstName("Sarah");
+		cust8.setLastName("Watson");
+		cal.setTime(dob8);
+		cust8.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));
+		cust8.setPaymentDate(dataTypeFactory.newXMLGregorianCalendar(paymentDate));
+		cust8.setAmount("£737.80");
 
 		customers.add(cust1);
 		customers.add(cust2);
@@ -109,6 +119,7 @@ public class CustomerRepository {
 		customers.add(cust5);
 		customers.add(cust6);
 		customers.add(cust7);
+		customers.add(cust8);
 	}
 
 	public Customer findCustomer(String nino) {
