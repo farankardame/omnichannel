@@ -142,7 +142,7 @@ public class CisRepository {
 		cust8.setNino("AA000777A");
 		cust8.setFirstName("Sarah");
 		cust8.setLastName("Watson");
-		cal.setTime(dob7);
+		cal.setTime(dob8);
 		cust8.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));
 		cust8.setAddressline1("150 Minories");
 		cust8.setAddressline2("Aldgate");
