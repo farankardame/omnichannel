@@ -136,7 +136,7 @@ public class CustomerRepository {
 		Customer cust11 = new Customer();
 		cust11.setNino("AA888777A");
 		cust11.setFirstName("Simon");
-		cust11.setLastName("O'Donoghue");
+		cust11.setLastName("ODonoghue");
 		cal.setTime(dob11);
 		cust11.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));
 		cust11.setPaymentDate(dataTypeFactory.newXMLGregorianCalendar(paymentDate));

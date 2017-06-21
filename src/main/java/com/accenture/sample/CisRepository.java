@@ -186,7 +186,7 @@ public class CisRepository {
 		Cisdetails cust11 = new Cisdetails();
 		cust11.setNino("AA888777A");
 		cust11.setFirstName("Simon");
-		cust11.setLastName("O'Donoghue");
+		cust11.setLastName("ODonoghue");
 		cal.setTime(dob11);
 		cust11.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));
 		cust11.setAddressline1("150 Minories");
