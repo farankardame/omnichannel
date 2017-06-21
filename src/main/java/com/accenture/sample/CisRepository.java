@@ -51,7 +51,7 @@ public class CisRepository {
 		cust1.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));		
 		cust1.setAddressline1("150 Minories");
 		cust1.setAddressline2("Aldgate");
-		cust1.setAddressline3("NULL");
+		cust1.setAddressline3("");
 		cust1.setCity("London");
 		cust1.setPostcode("EC3M 3BD");
 		cust1.setCountry("UK");
@@ -65,7 +65,7 @@ public class CisRepository {
 		cust2.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));		
 		cust2.setAddressline1("150 Minories");
 		cust2.setAddressline2("Aldgate");
-		cust2.setAddressline3("NULL");
+		cust2.setAddressline3("");
 		cust2.setCity("London");
 		cust2.setPostcode("EC3M 3BD");
 		cust2.setCountry("UK");
@@ -79,7 +79,7 @@ public class CisRepository {
 		cust3.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));
 		cust3.setAddressline1("150 Minories");
 		cust3.setAddressline2("Aldgate");
-		cust3.setAddressline3("NULL");
+		cust3.setAddressline3("");
 		cust3.setCity("London");
 		cust3.setPostcode("EC3M 3BD");
 		cust3.setCountry("UK");
@@ -93,7 +93,7 @@ public class CisRepository {
 		cust4.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));
 		cust4.setAddressline1("150 Minories");
 		cust4.setAddressline2("Aldgate");
-		cust4.setAddressline3("NULL");
+		cust4.setAddressline3("");
 		cust4.setCity("London");
 		cust4.setPostcode("EC3M 3BD");
 		cust4.setCountry("UK");
@@ -107,7 +107,7 @@ public class CisRepository {
 		cust5.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));
 		cust5.setAddressline1("150 Minories");
 		cust5.setAddressline2("Aldgate");
-		cust5.setAddressline3("NULL");
+		cust5.setAddressline3("");
 		cust5.setCity("London");
 		cust5.setPostcode("EC3M 3BD");
 		cust5.setCountry("UK");
@@ -121,7 +121,7 @@ public class CisRepository {
 		cust6.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));
 		cust6.setAddressline1("150 Minories");
 		cust6.setAddressline2("Aldgate");
-		cust6.setAddressline3("NULL");
+		cust6.setAddressline3("");
 		cust6.setCity("London");
 		cust6.setPostcode("EC3M 3BD");
 		cust6.setCountry("UK");
@@ -135,7 +135,7 @@ public class CisRepository {
 		cust7.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));
 		cust7.setAddressline1("150 Minories");
 		cust7.setAddressline2("Aldgate");
-		cust7.setAddressline3("NULL");
+		cust7.setAddressline3("");
 		cust7.setCity("London");
 		cust7.setPostcode("EC3M 3BD");
 		cust7.setCountry("UK");
@@ -149,7 +149,7 @@ public class CisRepository {
 		cust8.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));
 		cust8.setAddressline1("150 Minories");
 		cust8.setAddressline2("Aldgate");
-		cust8.setAddressline3("NULL");
+		cust8.setAddressline3("");
 		cust8.setCity("London");
 		cust8.setPostcode("EC3M 3BD");
 		cust8.setCountry("UK");
@@ -163,7 +163,7 @@ public class CisRepository {
 		cust9.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));
 		cust9.setAddressline1("150 Minories");
 		cust9.setAddressline2("Aldgate");
-		cust9.setAddressline3("NULL");
+		cust9.setAddressline3("");
 		cust9.setCity("London");
 		cust9.setPostcode("EC3M 3BD");
 		cust9.setCountry("UK");
@@ -177,7 +177,7 @@ public class CisRepository {
 		cust10.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));
 		cust10.setAddressline1("150 Minories");
 		cust10.setAddressline2("Aldgate");
-		cust10.setAddressline3("NULL");
+		cust10.setAddressline3("");
 		cust10.setCity("London");
 		cust10.setPostcode("EC3M 3BD");
 		cust10.setCountry("UK");
@@ -191,7 +191,7 @@ public class CisRepository {
 		cust11.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));
 		cust11.setAddressline1("150 Minories");
 		cust11.setAddressline2("Aldgate");
-		cust10.setAddressline3("NULL");
+		cust11.setAddressline3("");
 		cust11.setCity("London");
 		cust11.setPostcode("EC3M 3BD");
 		cust11.setCountry("UK");
