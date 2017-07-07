@@ -40,6 +40,8 @@ public class CustomerRepository {
 		Date dob9 = new SimpleDateFormat("dd/MM/yyyy").parse("09/09/1984");
 		Date dob10 = new SimpleDateFormat("dd/MM/yyyy").parse("10/09/1984");
 		Date dob11 = new SimpleDateFormat("dd/MM/yyyy").parse("01/06/1992");
+		Date dob12 = new SimpleDateFormat("dd/MM/yyyy").parse("22/10/1992");
+		Date dob13 = new SimpleDateFormat("dd/MM/yyyy").parse("13/12/1985");
 		
 		DatatypeFactory dataTypeFactory = DatatypeFactory.newInstance();
 
@@ -141,6 +143,24 @@ public class CustomerRepository {
 		cust11.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));
 		cust11.setPaymentDate(dataTypeFactory.newXMLGregorianCalendar(paymentDate));
 		cust11.setAmount("£457.80");
+		
+		Customer cust12 = new Customer();
+		cust12.setNino("AA111111A");
+		cust12.setFirstName("Jeremy");
+		cust12.setLastName("Hue");
+		cal.setTime(dob12);
+		cust12.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));
+		cust12.setPaymentDate(dataTypeFactory.newXMLGregorianCalendar(paymentDate));
+		cust12.setAmount("£757.80");
+		
+		Customer cust13 = new Customer();
+		cust13.setNino("AA222222A");
+		cust13.setFirstName("Simon");
+		cust13.setLastName("Agamah");
+		cal.setTime(dob13);
+		cust13.setDob(dataTypeFactory.newXMLGregorianCalendar(cal));
+		cust13.setPaymentDate(dataTypeFactory.newXMLGregorianCalendar(paymentDate));
+		cust13.setAmount("£457.80");
 
 		customers.add(cust1);
 		customers.add(cust2);
@@ -153,6 +173,8 @@ public class CustomerRepository {
 		customers.add(cust9);
 		customers.add(cust10);
 		customers.add(cust11);
+		customers.add(cust12);
+		customers.add(cust13);
 	}
 
 	public Customer findCustomer(String nino) {
